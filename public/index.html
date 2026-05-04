@@ -5,23 +5,361 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Yellow Box Project | Original songs for artists and creators</title>
   <meta name="description" content="Original songs, lyrics, instrumentals and soundscapes for artists, creators and brands." />
+
   <style>
-    :root{--yellow:#ffc300;--black:#030303;--soft:rgba(255,255,255,.72);--line:rgba(255,195,0,.32)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%,rgba(255,195,0,.13),transparent 28%),radial-gradient(circle at 80% 18%,rgba(255,195,0,.10),transparent 24%),linear-gradient(120deg,rgba(255,195,0,.10),transparent 18%,transparent 82%,rgba(255,195,0,.12)),#000;z-index:-3}a{color:inherit;text-decoration:none}.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 6vw;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.82);backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:12px}.logo-mark{width:38px;height:38px;border:4px solid var(--yellow);box-shadow:0 0 28px rgba(255,195,0,.42);transform:rotate(-1deg)}.brand-text strong{display:block;font-size:15px;letter-spacing:.16em;text-transform:uppercase;line-height:1.1}.brand-text span{color:var(--yellow);font-size:11px;letter-spacing:.42em;text-transform:uppercase;font-weight:800}nav{display:flex;gap:30px;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}nav a{opacity:.86}nav a:hover{color:var(--yellow)}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--yellow);color:var(--yellow);min-height:46px;padding:0 26px;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:900;transition:.25s ease;cursor:pointer;background:transparent}.btn:hover{transform:translateY(-2px);box-shadow:0 0 28px rgba(255,195,0,.24)}.btn.primary{background:var(--yellow);color:#050505}.hero{min-height:88vh;display:grid;place-items:center;padding:72px 6vw 38px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,195,0,.24),transparent 18%,transparent 82%,rgba(255,195,0,.22)),radial-gradient(circle at center,transparent 0,transparent 38%,rgba(0,0,0,.72) 72%),url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1800&q=80') center/cover;opacity:.42;filter:contrast(1.1) saturate(.75);z-index:-1}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.38),rgba(0,0,0,.92));z-index:-1}.hero-side{position:absolute;top:13%;color:var(--yellow);letter-spacing:.42em;text-transform:uppercase;font-weight:900;line-height:2.1;font-size:13px}.hero-side.left{left:6vw}.hero-side.right{right:6vw;text-align:right}.hero-content{text-align:center;max-width:920px}.hero-logo{width:clamp(95px,14vw,150px);height:clamp(95px,14vw,150px);border:9px solid var(--yellow);margin:0 auto 26px;box-shadow:0 0 40px rgba(255,195,0,.42),inset 0 0 25px rgba(255,195,0,.15)}.kicker{font-size:18px;letter-spacing:.45em;font-weight:900;text-transform:uppercase;margin-bottom:4px}h1{margin:0;font-size:clamp(48px,8.8vw,112px);letter-spacing:.08em;text-transform:uppercase;line-height:.92;text-shadow:0 0 34px rgba(255,255,255,.16)}h1 span{display:block;color:var(--yellow);font-size:.46em;letter-spacing:.28em;margin-top:14px}.tagline{margin:22px auto 26px;color:rgba(255,255,255,.82);letter-spacing:.34em;text-transform:uppercase;font-size:clamp(11px,1.4vw,15px);font-weight:800}.intro{max-width:650px;margin:0 auto 30px;color:var(--soft);font-size:clamp(16px,2vw,20px);line-height:1.7}.hero-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}.feature-strip{width:min(980px,100%);display:grid;grid-template-columns:repeat(4,1fr);margin:54px auto 0;border-top:1px solid rgba(255,195,0,.18)}.feature{padding:22px 18px;border-right:1px solid rgba(255,255,255,.18);text-align:center}.feature:last-child{border-right:none}.feature .icon{color:var(--yellow);font-size:30px;margin-bottom:12px}.feature strong{display:block;letter-spacing:.18em;text-transform:uppercase;font-size:12px}.feature p{color:var(--soft);line-height:1.5;font-size:13px;margin:10px 0 0}section{padding:82px 6vw}.section-head{max-width:850px;margin-bottom:34px}.eyebrow{color:var(--yellow);letter-spacing:.32em;text-transform:uppercase;font-size:12px;font-weight:900}h2{font-size:clamp(34px,5vw,64px);text-transform:uppercase;line-height:1;margin:14px 0;letter-spacing:.04em}.section-head p,.card p,.card li{color:var(--soft);line-height:1.65}.grid{display:grid;gap:20px}.grid.three{grid-template-columns:repeat(3,1fr)}.grid.four{grid-template-columns:repeat(4,1fr)}.card{background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.14);padding:30px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(255,195,0,.16),transparent 36%);pointer-events:none}.card h3{margin:0 0 13px;font-size:22px;text-transform:uppercase;letter-spacing:.07em}.price{color:var(--yellow);font-size:44px;font-weight:900;margin:18px 0}ul{padding-left:18px}.featured{border-color:var(--yellow);box-shadow:0 0 35px rgba(255,195,0,.10)}.badge{color:#000;background:var(--yellow);display:inline-block;padding:7px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;margin-bottom:18px}.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.big-quote{font-size:clamp(30px,4vw,54px);line-height:1.08;letter-spacing:.02em;text-transform:uppercase;margin:0}.audio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.track{padding:0;overflow:hidden}.track-cover{height:180px;background:linear-gradient(135deg,rgba(255,195,0,.22),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80') center/cover;border-bottom:1px solid rgba(255,255,255,.12);position:relative}.track:nth-child(2) .track-cover{background:linear-gradient(135deg,rgba(255,195,0,.18),rgba(0,0,0,.35)),url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80') center/cover}.track:nth-child(3) .track-cover{background:linear-gradient(135deg,rgba(255,195,0,.20),rgba(0,0,0,.40)),url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80') center/cover}.play-btn{position:absolute;left:22px;bottom:20px;width:58px;height:58px;border-radius:50%;border:1px solid var(--yellow);background:rgba(0,0,0,.72);color:var(--yellow);font-size:22px;cursor:pointer}.play-btn.playing{background:var(--yellow);color:#000;box-shadow:0 0 30px rgba(255,195,0,.35)}.track-body{padding:24px}.track-meta{display:flex;justify-content:space-between;color:var(--yellow);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:900;margin-bottom:12px}.wave{height:48px;display:flex;gap:4px;align-items:center;margin:22px 0}.bar{width:100%;background:rgba(255,195,0,.35);height:18px;transition:.25s}.playing-card .bar{animation:pulse .8s ease-in-out infinite alternate}.bar:nth-child(2n){height:30px}.bar:nth-child(3n){height:40px}.bar:nth-child(4n){height:24px}@keyframes pulse{from{opacity:.35;transform:scaleY(.75)}to{opacity:1;transform:scaleY(1.1)}}.license-row{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid rgba(255,255,255,.12);padding-top:18px}.form-row{display:flex;gap:10px;margin-top:22px}input,textarea{width:100%;background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.15);color:#fff;padding:15px 16px;outline:none;font:inherit}input:focus,textarea:focus{border-color:var(--yellow)}textarea{min-height:130px;resize:vertical;margin-top:10px}footer{padding:32px 6vw;border-top:1px solid rgba(255,255,255,.10);display:flex;justify-content:space-between;gap:20px;color:rgba(255,255,255,.55);font-size:12px;letter-spacing:.12em;text-transform:uppercase}@media(max-width:980px){nav,.socials,.hero-side{display:none}.topbar{padding:16px 5vw}.feature-strip,.grid.four,.grid.three,.split,.audio-grid{grid-template-columns:1fr}.feature{border-right:none;border-bottom:1px solid rgba(255,255,255,.12)}footer{flex-direction:column}.form-row{flex-direction:column}}
+    :root{--yellow:#ffc300;--black:#030303;--soft:rgba(255,255,255,.72);--line:rgba(255,195,0,.32)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%,rgba(255,195,0,.13),transparent 28%),radial-gradient(circle at 80% 18%,rgba(255,195,0,.10),transparent 24%),linear-gradient(120deg,rgba(255,195,0,.10),transparent 18%,transparent 82%,rgba(255,195,0,.12)),#000;z-index:-3}
+    a{color:inherit;text-decoration:none}
+    .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 6vw;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.82);backdrop-filter:blur(14px)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:38px;height:38px;border:4px solid var(--yellow);box-shadow:0 0 28px rgba(255,195,0,.42);transform:rotate(-1deg)}
+    .brand-text strong{display:block;font-size:15px;letter-spacing:.16em;text-transform:uppercase;line-height:1.1}
+    .brand-text span{color:var(--yellow);font-size:11px;letter-spacing:.42em;text-transform:uppercase;font-weight:800}
+    nav{display:flex;gap:30px;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}
+    nav a{opacity:.86}
+    nav a:hover{color:var(--yellow)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--yellow);color:var(--yellow);min-height:46px;padding:0 26px;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:900;transition:.25s ease;cursor:pointer;background:transparent}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 0 28px rgba(255,195,0,.24)}
+    .btn.primary{background:var(--yellow);color:#050505}
+    .hero{min-height:88vh;display:grid;place-items:center;padding:72px 6vw 38px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,195,0,.24),transparent 18%,transparent 82%,rgba(255,195,0,.22)),radial-gradient(circle at center,transparent 0,transparent 38%,rgba(0,0,0,.72) 72%),url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1800&q=80') center/cover;opacity:.42;filter:contrast(1.1) saturate(.75);z-index:-1}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.38),rgba(0,0,0,.92));z-index:-1}
+    .hero-side{position:absolute;top:13%;color:var(--yellow);letter-spacing:.42em;text-transform:uppercase;font-weight:900;line-height:2.1;font-size:13px}
+    .hero-side.left{left:6vw}
+    .hero-side.right{right:6vw;text-align:right}
+    .hero-content{text-align:center;max-width:920px}
+    .hero-logo{width:clamp(95px,14vw,150px);height:clamp(95px,14vw,150px);border:9px solid var(--yellow);margin:0 auto 26px;box-shadow:0 0 40px rgba(255,195,0,.42),inset 0 0 25px rgba(255,195,0,.15)}
+    .kicker{font-size:18px;letter-spacing:.45em;font-weight:900;text-transform:uppercase;margin-bottom:4px}
+    h1{margin:0;font-size:clamp(48px,8.8vw,112px);letter-spacing:.08em;text-transform:uppercase;line-height:.92;text-shadow:0 0 34px rgba(255,255,255,.16)}
+    h1 span{display:block;color:var(--yellow);font-size:.46em;letter-spacing:.28em;margin-top:14px}
+    .tagline{margin:22px auto 26px;color:rgba(255,255,255,.82);letter-spacing:.34em;text-transform:uppercase;font-size:clamp(11px,1.4vw,15px);font-weight:800}
+    .intro{max-width:650px;margin:0 auto 30px;color:var(--soft);font-size:clamp(16px,2vw,20px);line-height:1.7}
+    .hero-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+    .feature-strip{width:min(980px,100%);display:grid;grid-template-columns:repeat(4,1fr);margin:54px auto 0;border-top:1px solid rgba(255,195,0,.18)}
+    .feature{padding:22px 18px;border-right:1px solid rgba(255,255,255,.18);text-align:center}
+    .feature:last-child{border-right:none}
+    .feature .icon{color:var(--yellow);font-size:30px;margin-bottom:12px}
+    .feature strong{display:block;letter-spacing:.18em;text-transform:uppercase;font-size:12px}
+    .feature p{color:var(--soft);line-height:1.5;font-size:13px;margin:10px 0 0}
+    section{padding:82px 6vw}
+    .section-head{max-width:850px;margin-bottom:34px}
+    .eyebrow{color:var(--yellow);letter-spacing:.32em;text-transform:uppercase;font-size:12px;font-weight:900}
+    h2{font-size:clamp(34px,5vw,64px);text-transform:uppercase;line-height:1;margin:14px 0;letter-spacing:.04em}
+    .section-head p,.card p,.card li{color:var(--soft);line-height:1.65}
+    .grid{display:grid;gap:20px}
+    .grid.three{grid-template-columns:repeat(3,1fr)}
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .card{background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.14);padding:30px;position:relative;overflow:hidden}
+    .card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(255,195,0,.16),transparent 36%);pointer-events:none}
+    .card h3{margin:0 0 13px;font-size:22px;text-transform:uppercase;letter-spacing:.07em}
+    .price{color:var(--yellow);font-size:44px;font-weight:900;margin:18px 0}
+    ul{padding-left:18px}
+    .featured{border-color:var(--yellow);box-shadow:0 0 35px rgba(255,195,0,.10)}
+    .badge{color:#000;background:var(--yellow);display:inline-block;padding:7px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;margin-bottom:18px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .big-quote{font-size:clamp(30px,4vw,54px);line-height:1.08;letter-spacing:.02em;text-transform:uppercase;margin:0}
+    .audio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .track{padding:0;overflow:hidden}
+    .track-cover{height:180px;background:linear-gradient(135deg,rgba(255,195,0,.22),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80') center/cover;border-bottom:1px solid rgba(255,255,255,.12);position:relative}
+    .track:nth-child(2) .track-cover{background:linear-gradient(135deg,rgba(255,195,0,.18),rgba(0,0,0,.35)),url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80') center/cover}
+    .track:nth-child(3) .track-cover{background:linear-gradient(135deg,rgba(255,195,0,.20),rgba(0,0,0,.40)),url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80') center/cover}
+    .play-btn{position:absolute;left:22px;bottom:20px;width:58px;height:58px;border-radius:50%;border:1px solid var(--yellow);background:rgba(0,0,0,.72);color:var(--yellow);font-size:22px;cursor:pointer}
+    .play-btn.playing{background:var(--yellow);color:#000;box-shadow:0 0 30px rgba(255,195,0,.35)}
+    .track-body{padding:24px}
+    .track-meta{display:flex;justify-content:space-between;color:var(--yellow);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:900;margin-bottom:12px}
+    .wave{height:48px;display:flex;gap:4px;align-items:center;margin:22px 0}
+    .bar{width:100%;background:rgba(255,195,0,.35);height:18px;transition:.25s}
+    .playing-card .bar{animation:pulse .8s ease-in-out infinite alternate}
+    .bar:nth-child(2n){height:30px}
+    .bar:nth-child(3n){height:40px}
+    .bar:nth-child(4n){height:24px}
+    @keyframes pulse{from{opacity:.35;transform:scaleY(.75)}to{opacity:1;transform:scaleY(1.1)}}
+    .license-row{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid rgba(255,255,255,.12);padding-top:18px}
+    .form-row{display:flex;gap:10px;margin-top:22px}
+    input,textarea{width:100%;background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.15);color:#fff;padding:15px 16px;outline:none;font:inherit}
+    input:focus,textarea:focus{border-color:var(--yellow)}
+    textarea{min-height:130px;resize:vertical;margin-top:10px}
+    footer{padding:32px 6vw;border-top:1px solid rgba(255,255,255,.10);display:flex;justify-content:space-between;gap:20px;color:rgba(255,255,255,.55);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:980px){nav,.socials,.hero-side{display:none}.topbar{padding:16px 5vw}.feature-strip,.grid.four,.grid.three,.split,.audio-grid{grid-template-columns:1fr}.feature{border-right:none;border-bottom:1px solid rgba(255,255,255,.12)}footer{flex-direction:column}.form-row{flex-direction:column}}
   </style>
 </head>
+
 <body>
-  <header class="topbar"><a class="brand" href="#top"><div class="logo-mark"></div><div class="brand-text"><strong>The Yellow Box</strong><span>Project</span></div></a><nav><a href="#about">About</a><a href="#services">Services</a><a href="#music">Music</a><a href="#pricing">Licensing</a><a href="#contact">Contact</a></nav><div class="socials"><span>▶</span><span>◎</span><span>♪</span></div><a class="btn" href="#contact">Work with us</a></header>
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <div class="logo-mark"></div>
+      <div class="brand-text">
+        <strong>The Yellow Box</strong>
+        <span>Project</span>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#music">Music</a>
+      <a href="#pricing">Licensing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="socials">
+      <span>▶</span><span>◎</span><span>♪</span>
+    </div>
+
+    <a class="btn" href="#contact">Work with us</a>
+  </header>
+
   <main id="top">
-    <section class="hero"><div class="hero-side left">Original songs<br>for artists<br>and creators.</div><div class="hero-side right">Create.<br>Share.<br>Inspire.</div><div class="hero-content"><div class="hero-logo"></div><div class="kicker">The</div><h1>Yellow Box <span>Project</span></h1><div class="tagline">Songs. Emotions. Possibilities.</div><p class="intro">Original songs, lyrics, instrumentals and soundscapes for artists, creators and brands who want a unique sonic identity.</p><div class="hero-actions"><a class="btn primary" href="#contact">Book a project</a><a class="btn" href="#music">Listen to demos</a></div><div class="feature-strip"><div class="feature"><div class="icon">♫</div><strong>Original songs</strong><p>Exclusive ideas made to stand out.</p></div><div class="feature"><div class="icon">🎙</div><strong>For artists</strong><p>Lyrics and music built around your voice.</p></div><div class="feature"><div class="icon">▥</div><strong>New sounds</strong><p>Modern atmospheres, fresh emotion.</p></div><div class="feature"><div class="icon">◎</div><strong>Global vision</strong><p>Designed for release, social and streaming.</p></div></div></div></section>
-    <section id="about"><div class="split"><div class="card"><div class="eyebrow">What we do</div><p class="big-quote">We turn ideas into songs that touch.</p></div><div class="card"><p>The Yellow Box Project creates original music concepts: lyrics, toplines, instrumentals and custom sound atmospheres. A place for artists, creators and brands looking for something memorable, emotional and ready to share.</p><a class="btn" href="#contact">Start your request</a></div></div></section>
-    <section id="services"><div class="section-head"><div class="eyebrow">Our services</div><h2>Music made for your project</h2><p>Choose a ready-to-use license or request a custom creation based on your mood, story, language and audience.</p></div><div class="grid four"><div class="card"><h3>Custom Songs</h3><p>Original songs shaped around your story, mood and artistic direction.</p></div><div class="card"><h3>Lyrics Writing</h3><p>French or English lyrics with emotional storytelling and strong hooks.</p></div><div class="card"><h3>Instrumentals</h3><p>Chill, cinematic, urban or emotional productions for releases and content.</p></div><div class="card"><h3>Licensing</h3><p>Clear usage rights for artists, YouTube creators, podcasts and brands.</p></div></div></section>
-    <section id="music"><div class="section-head"><div class="eyebrow">Demo player</div><h2>Listen to the sound</h2><p>Three demo moods to show the Yellow Box direction. These are interactive placeholders: we can replace them with your real MP3/WAV files as soon as you upload your tracks.</p></div><div class="audio-grid"><div class="card track" data-tone="warm"><div class="track-cover"><button class="play-btn">▶</button></div><div class="track-body"><div class="track-meta"><span>Chill / Mediterranean</span><span>Demo 01</span></div><h3>Golden Coast</h3><p>Warm guitars, soft textures, cinematic sunset mood.</p><div class="wave"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></div><div class="license-row"><span>Available for licensing</span><a class="btn" href="#contact">Request</a></div></div></div><div class="card track" data-tone="urban"><div class="track-cover"><button class="play-btn">▶</button></div><div class="track-body"><div class="track-meta"><span>Urban / Emotional</span><span>Demo 02</span></div><h3>Midnight Hook</h3><p>Modern rhythm, emotional topline, strong artist potential.</p><div class="wave"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></div><div class="license-row"><span>Lyrics + beat concept</span><a class="btn" href="#contact">Request</a></div></div></div><div class="card track" data-tone="cinematic"><div class="track-cover"><button class="play-btn">▶</button></div><div class="track-body"><div class="track-meta"><span>Cinematic / Brand</span><span>Demo 03</span></div><h3>Wide Horizon</h3><p>Atmospheric soundscape for video, brand stories and content.</p><div class="wave"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></div><div class="license-row"><span>Custom version possible</span><a class="btn" href="#contact">Request</a></div></div></div></div></section>
-    <section id="pricing" class="pricing"><div class="section-head"><div class="eyebrow">Licensing</div><h2>Choose your plan</h2><p>Simple offers designed to start quickly, then scale toward exclusive releases or collaborations.</p></div><div class="grid four"><div class="card"><h3>Basic License</h3><div class="price">39€</div><ul><li>MP3 instrumental</li><li>Lyrics included</li><li>Right to record and publish</li><li>Credit required</li><li>Non-exclusive</li></ul><a class="btn" href="#contact">Choose Basic</a></div><div class="card featured"><span class="badge">Most popular</span><h3>Creator License</h3><div class="price">99€</div><ul><li>WAV + MP3</li><li>Lyrics included</li><li>Monetization allowed</li><li>Optimized clean version</li><li>Support and guidance</li></ul><a class="btn primary" href="#contact">Choose Creator</a></div><div class="card"><h3>Exclusive License</h3><div class="price">299€</div><ul><li>Full exclusivity</li><li>Track removed from public offers</li><li>WAV + MP3</li><li>Publishing and monetization rights</li><li>Personalized support</li></ul><a class="btn" href="#contact">Go Exclusive</a></div><div class="card"><h3>Collab Deal</h3><div class="price">Custom</div><ul><li>Tailored collaboration</li><li>Revenue split possible</li><li>Teamwork on the project</li><li>Shared strategy</li></ul><a class="btn" href="#contact">Discuss Collab</a></div></div></section>
-    <section><div class="grid three"><div class="card"><div class="eyebrow">Step 1</div><h3>Tell us your vision</h3><p>Share the style, emotion, story and platform you have in mind.</p></div><div class="card"><div class="eyebrow">Step 2</div><h3>We shape the sound</h3><p>Lyrics, mood, structure and production direction are built around your goal.</p></div><div class="card"><div class="eyebrow">Step 3</div><h3>You release</h3><p>Receive your files and use them according to the license you selected.</p></div></div></section>
-    <section id="contact"><div class="split"><div class="card"><div class="eyebrow">Get exclusive updates</div><h2>Be the first to hear new unreleased tracks.</h2><div class="form-row"><input type="email" placeholder="Your email address"/><button class="btn primary">Subscribe</button></div><p>No spam. Unsubscribe anytime.</p></div><div class="card"><div class="eyebrow">Interested?</div><h2>Start a project</h2><p>Tell us what you need. We will help you choose the right formula.</p><form action="mailto:yellowboxproject.contact@gmail.com" method="post" enctype="text/plain"><input name="name" placeholder="Your name"/><input name="email" type="email" placeholder="Your email" style="margin-top:10px"/><textarea name="message" placeholder="Tell us about your project"></textarea><button class="btn primary" type="submit" style="margin-top:12px">Send request</button></form></div></div></section>
-  </main><footer><div>© 2026 The Yellow Box Project. All rights reserved.</div><div>Terms · Privacy · Contact</div></footer>
+    <section class="hero">
+      <div class="hero-side left">Original songs<br>for artists<br>and creators.</div>
+      <div class="hero-side right">Create.<br>Share.<br>Inspire.</div>
+
+      <div class="hero-content">
+        <div class="hero-logo"></div>
+        <div class="kicker">The</div>
+        <h1>Yellow Box <span>Project</span></h1>
+        <div class="tagline">Songs. Emotions. Possibilities.</div>
+        <p class="intro">Original songs, lyrics, instrumentals and soundscapes for artists, creators and brands who want a unique sonic identity.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Book a project</a>
+          <a class="btn" href="#music">Listen to demos</a>
+        </div>
+
+        <div class="feature-strip">
+          <div class="feature"><div class="icon">♫</div><strong>Original songs</strong><p>Exclusive ideas made to stand out.</p></div>
+          <div class="feature"><div class="icon">🎙</div><strong>For artists</strong><p>Lyrics and music built around your voice.</p></div>
+          <div class="feature"><div class="icon">▥</div><strong>New sounds</strong><p>Modern atmospheres, fresh emotion.</p></div>
+          <div class="feature"><div class="icon">◎</div><strong>Global vision</strong><p>Designed for release, social and streaming.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="split">
+        <div class="card">
+          <div class="eyebrow">What we do</div>
+          <p class="big-quote">We turn ideas into songs that touch.</p>
+        </div>
+        <div class="card">
+          <p>The Yellow Box Project creates original music concepts: lyrics, toplines, instrumentals and custom sound atmospheres. A place for artists, creators and brands looking for something memorable, emotional and ready to share.</p>
+          <a class="btn" href="#contact">Start your request</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-head">
+        <div class="eyebrow">Our services</div>
+        <h2>Music made for your project</h2>
+        <p>Choose a ready-to-use license or request a custom creation based on your mood, story, language and audience.</p>
+      </div>
+
+      <div class="grid four">
+        <div class="card"><h3>Custom Songs</h3><p>Original songs shaped around your story, mood and artistic direction.</p></div>
+        <div class="card"><h3>Lyrics Writing</h3><p>French or English lyrics with emotional storytelling and strong hooks.</p></div>
+        <div class="card"><h3>Instrumentals</h3><p>Chill, cinematic, urban or emotional productions for releases and content.</p></div>
+        <div class="card"><h3>Licensing</h3><p>Clear usage rights for artists, YouTube creators, podcasts and brands.</p></div>
+      </div>
+    </section>
+
+    <section id="music">
+      <div class="section-head">
+        <div class="eyebrow">Demo player</div>
+        <h2>Listen to the sound</h2>
+        <p>Discover original sounds from The Yellow Box Project. More tracks will be added soon.</p>
+      </div>
+
+      <div class="audio-grid">
+
+        <div class="card track">
+          <audio src="/audio/Seule.mp3"></audio>
+
+          <div class="track-cover">
+            <button class="play-btn">▶</button>
+          </div>
+
+          <div class="track-body">
+            <div class="track-meta">
+              <span>Electro Pop / Minimal</span>
+              <span>Original</span>
+            </div>
+
+            <h3>Seule</h3>
+
+            <p>Minimal electro-pop, intimate mood, modern emotional vibe.</p>
+
+            <div class="wave">
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+
+            <div class="license-row">
+              <span>Available for licensing</span>
+              <a class="btn" href="#contact">Request</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card track">
+          <div class="track-cover">
+            <button class="play-btn">▶</button>
+          </div>
+
+          <div class="track-body">
+            <div class="track-meta">
+              <span>Urban / Emotional</span>
+              <span>Coming soon</span>
+            </div>
+
+            <h3>Midnight Hook</h3>
+            <p>Modern rhythm, emotional topline, strong artist potential.</p>
+
+            <div class="wave">
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+
+            <div class="license-row">
+              <span>Demo coming soon</span>
+              <a class="btn" href="#contact">Request</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card track">
+          <div class="track-cover">
+            <button class="play-btn">▶</button>
+          </div>
+
+          <div class="track-body">
+            <div class="track-meta">
+              <span>Cinematic / Brand</span>
+              <span>Coming soon</span>
+            </div>
+
+            <h3>Wide Horizon</h3>
+            <p>Atmospheric soundscape for video, brand stories and content.</p>
+
+            <div class="wave">
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+
+            <div class="license-row">
+              <span>Demo coming soon</span>
+              <a class="btn" href="#contact">Request</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="section-head">
+        <div class="eyebrow">Licensing</div>
+        <h2>Choose your plan</h2>
+        <p>Simple offers designed to start quickly, then scale toward exclusive releases or collaborations.</p>
+      </div>
+
+      <div class="grid four">
+        <div class="card"><h3>Basic License</h3><div class="price">39€</div><ul><li>MP3 instrumental</li><li>Lyrics included</li><li>Right to record and publish</li><li>Credit required</li><li>Non-exclusive</li></ul><a class="btn" href="#contact">Choose Basic</a></div>
+        <div class="card featured"><span class="badge">Most popular</span><h3>Creator License</h3><div class="price">99€</div><ul><li>WAV + MP3</li><li>Lyrics included</li><li>Monetization allowed</li><li>Optimized clean version</li><li>Support and guidance</li></ul><a class="btn primary" href="#contact">Choose Creator</a></div>
+        <div class="card"><h3>Exclusive License</h3><div class="price">299€</div><ul><li>Full exclusivity</li><li>Track removed from public offers</li><li>WAV + MP3</li><li>Publishing and monetization rights</li><li>Personalized support</li></ul><a class="btn" href="#contact">Go Exclusive</a></div>
+        <div class="card"><h3>Collab Deal</h3><div class="price">Custom</div><ul><li>Tailored collaboration</li><li>Revenue split possible</li><li>Teamwork on the project</li><li>Shared strategy</li></ul><a class="btn" href="#contact">Discuss Collab</a></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid three">
+        <div class="card"><div class="eyebrow">Step 1</div><h3>Tell us your vision</h3><p>Share the style, emotion, story and platform you have in mind.</p></div>
+        <div class="card"><div class="eyebrow">Step 2</div><h3>We shape the sound</h3><p>Lyrics, mood, structure and production direction are built around your goal.</p></div>
+        <div class="card"><div class="eyebrow">Step 3</div><h3>You release</h3><p>Receive your files and use them according to the license you selected.</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="split">
+        <div class="card">
+          <div class="eyebrow">Get exclusive updates</div>
+          <h2>Be the first to hear new unreleased tracks.</h2>
+          <div class="form-row">
+            <input type="email" placeholder="Your email address"/>
+            <button class="btn primary">Subscribe</button>
+          </div>
+          <p>No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="card">
+          <div class="eyebrow">Interested?</div>
+          <h2>Start a project</h2>
+          <p>Tell us what you need. We will help you choose the right formula.</p>
+          <form action="mailto:yellowboxproject.contact@gmail.com" method="post" enctype="text/plain">
+            <input name="name" placeholder="Your name"/>
+            <input name="email" type="email" placeholder="Your email" style="margin-top:10px"/>
+            <textarea name="message" placeholder="Tell us about your project"></textarea>
+            <button class="btn primary" type="submit" style="margin-top:12px">Send request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 The Yellow Box Project. All rights reserved.</div>
+    <div>Terms · Privacy · Contact</div>
+  </footer>
+
   <script>
-    let ctx, playing=null, nodes=[];function stopAll(){nodes.forEach(n=>{try{n.stop? n.stop():n.disconnect()}catch(e){}});nodes=[];document.querySelectorAll('.play-btn').forEach(b=>{b.textContent='▶';b.classList.remove('playing')});document.querySelectorAll('.track').forEach(c=>c.classList.remove('playing-card'));playing=null}function playMood(card){if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();stopAll();playing=card;card.classList.add('playing-card');const btn=card.querySelector('.play-btn');btn.textContent='❚❚';btn.classList.add('playing');const mood=card.dataset.tone;const freqs=mood==='warm'?[196,246.94,329.63]:mood==='urban'?[110,220,277.18]:[130.81,196,261.63];const master=ctx.createGain();master.gain.value=.045;master.connect(ctx.destination);freqs.forEach((f,i)=>{const osc=ctx.createOscillator();const gain=ctx.createGain();osc.type=i===0?'sine':'triangle';osc.frequency.value=f;gain.gain.value=.55/(i+1);osc.connect(gain);gain.connect(master);osc.start();nodes.push(osc)});const lfo=ctx.createOscillator();const lfoGain=ctx.createGain();lfo.frequency.value=.18;lfoGain.gain.value=.025;lfo.connect(lfoGain);lfoGain.connect(master.gain);lfo.start();nodes.push(lfo);setTimeout(stopAll,12000)}document.querySelectorAll('.play-btn').forEach(btn=>btn.addEventListener('click',()=>{const card=btn.closest('.track');playing===card?stopAll():playMood(card)}));
+    let currentAudio = null;
+
+    function stopAll() {
+      document.querySelectorAll('audio').forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+
+      document.querySelectorAll('.play-btn').forEach(button => {
+        button.textContent = '▶';
+        button.classList.remove('playing');
+      });
+
+      document.querySelectorAll('.track').forEach(card => {
+        card.classList.remove('playing-card');
+      });
+
+      currentAudio = null;
+    }
+
+    document.querySelectorAll('.play-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.track');
+        const audio = card.querySelector('audio');
+
+        if (!audio) {
+          alert('Demo coming soon');
+          return;
+        }
+
+        if (currentAudio === audio && !audio.paused) {
+          stopAll();
+          return;
+        }
+
+        stopAll();
+
+        audio.play();
+        currentAudio = audio;
+
+        button.textContent = '❚❚';
+        button.classList.add('playing');
+        card.classList.add('playing-card');
+      });
+    });
   </script>
 </body>
 </html>
