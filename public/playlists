@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playlists | The Yellow Box Project</title>
+
+<style>
+body{
+  margin:0;
+  background:#000;
+  color:#fff;
+  font-family:Arial;
+}
+
+h1{
+  text-align:center;
+  padding:60px 0 20px;
+  letter-spacing:.1em;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  padding:40px 6vw;
+}
+
+/* CARD */
+.card{
+  position:relative;
+  height:300px;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.5s ease;
+}
+
+/* OVERLAY */
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.8), transparent);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:20px;
+  transition:.4s ease;
+}
+
+/* NUMBER */
+.number{
+  position:absolute;
+  top:20px;
+  left:20px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* TITLE */
+.title{
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+/* DESCRIPTION (hidden) */
+.desc{
+  font-size:14px;
+  color:#ccc;
+  opacity:0;
+  transform:translateY(10px);
+  transition:.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover img{
+  transform:scale(1.08);
+}
+
+.card:hover .desc{
+  opacity:1;
+  transform:translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Browse Playlists</h1>
+
+<div class="grid">
+
+<a href="/playlist-pop.html" class="card">
+  <img src="/pop.jpg">
+  <div class="number">01.</div>
+  <div class="overlay">
+    <div class="title">POP</div>
+    <div class="desc">Melodic, emotional and commercial songs.</div>
+  </div>
+</a>
+
+<a href="/playlist-rap.html" class="card">
+  <img src="/rap.jpg">
+  <div class="number">02.</div>
+  <div class="overlay">
+    <div class="title">RAP</div>
+    <div class="desc">French rap, melancholic vibes, storytelling.</div>
+  </div>
+</a>
+
+<a href="/playlist-rock.html" class="card">
+  <img src="/rock.jpg">
+  <div class="number">03.</div>
+  <div class="overlay">
+    <div class="title">ROCK</div>
+    <div class="desc">Raw energy, guitars and strong emotion.</div>
+  </div>
+</a>
+
+<a href="/playlist-chill.html" class="card">
+  <img src="/chill.jpg">
+  <div class="number">04.</div>
+  <div class="overlay">
+    <div class="title">CHILL</div>
+    <div class="desc">Relaxing, ambient and atmospheric music.</div>
+  </div>
+</a>
+
+<a href="/playlist-french.html" class="card">
+  <img src="/french.jpg">
+  <div class="number">05.</div>
+  <div class="overlay">
+    <div class="title">FRENCH SONGS</div>
+    <div class="desc">Songs written in French with strong identity.</div>
+  </div>
+</a>
+
+</div>
+
+</body>
+</html>
