@@ -6,143 +6,220 @@
 <title>Playlists | The Yellow Box Project</title>
 
 <style>
-body{
-  margin:0;
-  background:#000;
-  color:#fff;
-  font-family:Arial;
-}
+:root{--yellow:#ffc300;--soft:rgba(255,255,255,.72)}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%,rgba(255,195,0,.13),transparent 28%),radial-gradient(circle at 80% 18%,rgba(255,195,0,.10),transparent 24%),linear-gradient(120deg,rgba(255,195,0,.10),transparent 18%,transparent 82%,rgba(255,195,0,.12)),#000;z-index:-3}
+a{color:inherit;text-decoration:none}
 
-h1{
-  text-align:center;
-  padding:60px 0 20px;
-  letter-spacing:.1em;
-}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 6vw;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.82);backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo-mark{width:38px;height:38px;border:4px solid var(--yellow);box-shadow:0 0 28px rgba(255,195,0,.42)}
+.brand-text strong{display:block;font-size:15px;letter-spacing:.16em;text-transform:uppercase}
+.brand-text span{color:var(--yellow);font-size:11px;letter-spacing:.42em;text-transform:uppercase;font-weight:800}
+nav{display:flex;gap:30px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}
+nav a:hover{color:var(--yellow)}
+.btn{border:1px solid var(--yellow);color:var(--yellow);padding:14px 26px;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900}
 
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  padding:40px 6vw;
-}
+.hero{padding:90px 6vw 40px}
+.eyebrow{color:var(--yellow);letter-spacing:.32em;text-transform:uppercase;font-size:12px;font-weight:900}
+h1{font-size:clamp(48px,7vw,96px);line-height:.92;text-transform:uppercase;margin:14px 0}
+.intro{max-width:760px;color:var(--soft);font-size:18px;line-height:1.7}
 
-/* CARD */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:30px 6vw 90px}
+
 .card{
+  height:360px;
   position:relative;
-  height:300px;
   overflow:hidden;
-  cursor:pointer;
+  border:1px solid rgba(255,255,255,.14);
+  background:#111;
 }
 
-.card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.5s ease;
-}
-
-/* OVERLAY */
-.overlay{
+.card:before{
+  content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(to top, rgba(0,0,0,.8), transparent);
+  background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.92));
+  z-index:1;
+}
+
+.card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top right,rgba(255,195,0,.22),transparent 38%);
+  z-index:2;
+  pointer-events:none;
+}
+
+.visual{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  transition:.5s ease;
+  opacity:.82;
+}
+
+.card:hover .visual{transform:scale(1.08);opacity:1}
+
+.content{
+  position:absolute;
+  inset:0;
+  z-index:3;
+  padding:28px;
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
-  padding:20px;
-  transition:.4s ease;
+  justify-content:space-between;
 }
 
-/* NUMBER */
 .number{
-  position:absolute;
-  top:20px;
-  left:20px;
-  font-size:22px;
-  font-weight:bold;
+  color:var(--yellow);
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:.08em;
 }
 
-/* TITLE */
-.title{
-  font-size:22px;
-  font-weight:bold;
-  margin-bottom:5px;
+.bottom h2{
+  margin:0 0 12px;
+  font-size:34px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
 
-/* DESCRIPTION (hidden) */
+.line{
+  width:100%;
+  height:2px;
+  background:rgba(255,195,0,.8);
+  margin:12px 0;
+}
+
 .desc{
-  font-size:14px;
-  color:#ccc;
+  color:var(--soft);
+  line-height:1.5;
   opacity:0;
-  transform:translateY(10px);
-  transition:.3s;
-}
-
-/* HOVER EFFECT */
-.card:hover img{
-  transform:scale(1.08);
+  transform:translateY(12px);
+  transition:.35s ease;
 }
 
 .card:hover .desc{
   opacity:1;
   transform:translateY(0);
 }
+
+.pop{background-image:url('/seule.png')}
+.rap{background-image:url('/rap.png')}
+.rock{background-image:url('https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=900&q=80')}
+.chill{background-image:url('/wagi4.png')}
+.french{background-image:url('/seule.png')}
+
+footer{padding:32px 6vw;border-top:1px solid rgba(255,255,255,.10);color:rgba(255,255,255,.55);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+
+@media(max-width:980px){
+  nav{display:none}
+  .grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 
 <body>
 
-<h1>Browse Playlists</h1>
+<header class="topbar">
+  <a class="brand" href="/index.html">
+    <div class="logo-mark"></div>
+    <div class="brand-text">
+      <strong>The Yellow Box</strong>
+      <span>Project</span>
+    </div>
+  </a>
+
+  <nav>
+    <a href="/index.html#about">About</a>
+    <a href="/playlists.html">Playlists</a>
+    <a href="/index.html#music">Catalog</a>
+    <a href="/index.html#contact">Contact</a>
+  </nav>
+
+  <a class="btn" href="/index.html#contact">Contact us</a>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Playlists</div>
+  <h1>Browse by mood</h1>
+  <p class="intro">
+    Explore original songs by style, atmosphere and intention.  
+    A song can live in several playlists — Pop, French Songs, Rap, Chill — just like a real music catalog.
+  </p>
+</section>
 
 <div class="grid">
 
-<a href="/playlist-pop.html" class="card">
-  <img src="/pop.jpg">
-  <div class="number">01.</div>
-  <div class="overlay">
-    <div class="title">POP</div>
-    <div class="desc">Melodic, emotional and commercial songs.</div>
-  </div>
-</a>
+  <a href="/playlist-pop.html" class="card">
+    <div class="visual pop"></div>
+    <div class="content">
+      <div class="number">01.</div>
+      <div class="bottom">
+        <h2>Pop</h2>
+        <div class="line"></div>
+        <p class="desc">Emotional, melodic and modern songs waiting for the right voice.</p>
+      </div>
+    </div>
+  </a>
 
-<a href="/playlist-rap.html" class="card">
-  <img src="/rap.jpg">
-  <div class="number">02.</div>
-  <div class="overlay">
-    <div class="title">RAP</div>
-    <div class="desc">French rap, melancholic vibes, storytelling.</div>
-  </div>
-</a>
+  <a href="/playlist-rap.html" class="card">
+    <div class="visual rap"></div>
+    <div class="content">
+      <div class="number">02.</div>
+      <div class="bottom">
+        <h2>Rap</h2>
+        <div class="line"></div>
+        <p class="desc">French rap, melancholic energy, storytelling and strong toplines.</p>
+      </div>
+    </div>
+  </a>
 
-<a href="/playlist-rock.html" class="card">
-  <img src="/rock.jpg">
-  <div class="number">03.</div>
-  <div class="overlay">
-    <div class="title">ROCK</div>
-    <div class="desc">Raw energy, guitars and strong emotion.</div>
-  </div>
-</a>
+  <a href="/playlist-rock.html" class="card">
+    <div class="visual rock"></div>
+    <div class="content">
+      <div class="number">03.</div>
+      <div class="bottom">
+        <h2>Rock</h2>
+        <div class="line"></div>
+        <p class="desc">Guitars, raw energy, live emotion and powerful song ideas.</p>
+      </div>
+    </div>
+  </a>
 
-<a href="/playlist-chill.html" class="card">
-  <img src="/chill.jpg">
-  <div class="number">04.</div>
-  <div class="overlay">
-    <div class="title">CHILL</div>
-    <div class="desc">Relaxing, ambient and atmospheric music.</div>
-  </div>
-</a>
+  <a href="/playlist-chill.html" class="card">
+    <div class="visual chill"></div>
+    <div class="content">
+      <div class="number">04.</div>
+      <div class="bottom">
+        <h2>Chill</h2>
+        <div class="line"></div>
+        <p class="desc">Mediterranean moods, soft textures, ambient and relaxing music.</p>
+      </div>
+    </div>
+  </a>
 
-<a href="/playlist-french.html" class="card">
-  <img src="/french.jpg">
-  <div class="number">05.</div>
-  <div class="overlay">
-    <div class="title">FRENCH SONGS</div>
-    <div class="desc">Songs written in French with strong identity.</div>
-  </div>
-</a>
+  <a href="/playlist-french.html" class="card">
+    <div class="visual french"></div>
+    <div class="content">
+      <div class="number">05.</div>
+      <div class="bottom">
+        <h2>French Songs</h2>
+        <div class="line"></div>
+        <p class="desc">French lyrics, human stories and songs ready to be performed.</p>
+      </div>
+    </div>
+  </a>
 
 </div>
+
+<footer>
+  © 2026 The Yellow Box Project. Catalog · Playlists · Contact
+</footer>
 
 </body>
 </html>
